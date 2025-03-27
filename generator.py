@@ -1,4 +1,5 @@
-from generator_funcs import *
+from generatorFuncs import *
+
 
 def main():
 
