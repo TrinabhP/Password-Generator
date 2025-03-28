@@ -1,8 +1,7 @@
 import tkinter as tk
-from tkinter import ttk
+import ttkbootstrap as ttk
 import random
 import string
-
 
 
 def generate(symbols=True, uppercase=True, digits=True):
@@ -24,7 +23,7 @@ def generate(symbols=True, uppercase=True, digits=True):
 	output_string.set("".join(password))
 
 # window
-window = tk.Tk()
+window = ttk.Window(themename = 'sandstone')
 window.title("Password-Generator")
 window.geometry('300x150')
 
