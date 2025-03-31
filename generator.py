@@ -7,7 +7,7 @@ def main():
 		print("Your password is strong!")
 
 	else:
-		print("Your password is too short.")
+		print("Your password is weak.")
 
 	change_password = input("\nDo you want to change your password?(y/n) ")
 	if (change_password == 'y'):
