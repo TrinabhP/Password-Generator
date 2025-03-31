@@ -7,7 +7,23 @@ def check_password():
 	if (len(user_pass) < 14):
 		return False
 
-	return True
+	symbol = False
+	digits = False
+	letters = False
+
+	for c in user_pass:
+		if (c in string.digits):
+			digits = True
+		elif (c in string.punctuation):
+			symbol = True
+		else:
+			letters = True
+
+	if (symbol and digits and letters):
+		return True
+
+	else:
+		return False
 
 
 def generate(length, symbols=False, uppercase=False, digits=False):
